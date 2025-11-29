@@ -9,6 +9,99 @@
         <script src="src/script.js" defer></script>
     </head>
     <body>
-        <h1>Hola Mundo</h1>
+        <nav>
+            <!-- Side Bar o menu izquierdo -->
+            <a href="#" id="icono">
+                <!-- Icono de Twitter -->
+            </a>
+            <div class="flex">
+                <ul id="sidebar">
+                    <li>Inicio</li>
+                    <li>Explorar</li>
+                    <li>Notificaciones</li>
+                    <li>Mensajes</li>
+                    <li>Grok</li>
+                    <li>Comunidades</li>
+                    <li>Perfil</li>
+                    <li>Mas Opciones</li>
+                </ul>
+                <a href="#">
+                    <!-- Boton de "Postear" -->
+                </a>
+            </div>
+            <a href="#">
+                <!-- Boton de Gestion de Cuentas -->
+                <div>
+                    <!-- Foto de Perfil -->
+                </div>
+                <span>
+                    <!-- Nombre de Usuario -->
+                </span>
+                <a href="#">
+                    <!-- Boton de Opciones -->
+                </a>
+            </a>
+        </nav>
+        <main>
+            <!-- Contenido Principal (post) -->
+            <nav>
+                <ul>
+                    <li>Para ti</li>
+                    <li>Siguiendo</li>
+                </ul>
+            </nav>
+            <template id="post">
+                <!-- Estructura general de un post en la pagina -->
+                <div class="encabezado">
+                    <div class="usuario"></div>
+                    <a href="#" class="opciones"></a>
+                </div>
+                <div class="texto"></div>
+                <div class="imagen"></div>
+                <div class="botones">
+                    <a href="#" class="comentarios"></a>
+                    <a href="#" class="compartir"></a>
+                    <a href="#" class="like"></a>
+                </div>
+            </template>
+        </main>
+        <aside class="flex">
+            <!-- Que esta pasando y Suscripcion -->
+            <form id="busqueda">
+                <input type="text" placeholder="Buscar" />
+            </form>
+            <div id="suscripcion" class="tarjeta">
+                <h2>Suscribete a Premium</h2>
+                <p>
+                    Suscribete para desbloquear nuevas funciones y, si eres
+                    elegible, recibir un pago de cuotas de ingresos.
+                </p>
+            </div>
+            <nav id="tendencia" class="tarjeta">
+                <h2>Qué está pasando</h2>
+                <ul>
+                    <li>
+                        <span>Solo en X - Tendencia</span>
+                        <span>#ElonVsMark</span>
+                        <span>71,8 mil publicaciones</span>
+                    </li>
+                    <li>
+                        <span>Política - Tendencia</span>
+                        <span>#Capriles</span>
+                        <span>2,278 publicaciones</span>
+                    </li>
+                    <li>
+                        <span>Deportes - Tendencia</span>
+                        <span>#Columbus</span>
+                        <span>6,512 publicaciones</span>
+                    </li>
+                    <li>
+                        <span>Noticias - Tendencia</span>
+                        <span>#Loret</span>
+                        <span>19 mil publicaciones</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
     </body>
 </html>
