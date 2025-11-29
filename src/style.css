@@ -25,31 +25,41 @@ body {
 }
 #derecha {
     grid-area: derecha;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* Tarjetas reciclables */
 .tarjeta {
+    user-select: none;
     margin: 1em;
-    padding: 1.5rem;
     border: solid 2px var(--bordes);
     box-shadow: 0px 2px 6px var(--bordes);
-    border-radius: 2em;
+    border-radius: 1.5em;
 
     h2 {
         /* Titulos */
+        padding: 1rem;
+        padding-bottom: 0;
         margin: 0;
+    }
+
+    p {
+        margin: 0;
+        padding: 1rem;
+        padding-bottom: 0;
     }
 
     a {
         /* Botones */
         display: block;
-        margin-top: 20px;
-        width: 90%;
+        padding: 0.5rem;
+        margin: 1rem;
+        width: 25%;
         color: white;
         text-align: center;
         text-decoration: none;
         background: var(--azulPrimario);
-        padding: 1rem;
         border-radius: 6rem;
         transition: background 0.25s;
     }
@@ -76,4 +86,31 @@ body {
     outline: 0;
     border: solid 2px var(--azulPrimario);
     transition: border-color 0.2s;
+}
+
+/* Tarjeta de Tendencias */
+#tendencia {
+    ul {
+        padding: 0rem;
+        li {
+            padding: 0.5rem;
+            padding-left: 1rem;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            .gris {
+                font-size: 0.8rem;
+                color: #646464;
+            }
+            .negrita {
+                font-weight: bold;
+            }
+            transition: background-color 0.2s;
+        }
+        li:hover {
+            cursor: pointer;
+            background: var(--bordes);
+            transition: background-color 0.2s;
+        }
+    }
 }
