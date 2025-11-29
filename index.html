@@ -47,10 +47,35 @@
             <!-- Contenido Principal (post) -->
             <nav>
                 <ul>
-                    <li>Para ti</li>
-                    <li>Siguiendo</li>
+                    <li><span id="ParaTi">Para ti</span></li>
+                    <li><span>Siguiendo</span></li>
                 </ul>
             </nav>
+            <div id="postear">
+                <!-- Interfaz para crear publicacion -->
+                <div>
+                    <!-- Foto de Perfil -->
+                    <img src="img/perfil.png" />
+                </div>
+                <div id="postFormulario">
+                    <input type="text" placeholder="¿Qué está pasando?" />
+                    <a id="privacidad" href="#">
+                        Cualquier persona puede responder
+                    </a>
+                    <div id="botones">
+                        <div>
+                            <a id="imagen" href="#"></a>
+                            <a id="gifs" href="#"></a>
+                            <a id="grok" href="#"></a>
+                            <a id="opciones" href="#"></a>
+                            <a id="emoji" href="#"></a>
+                            <a id="fecha" href="#"></a>
+                            <a id="ubicacion" href="#"></a>
+                        </div>
+                        <a id="botonpostear" href="#"><span>Postear</span></a>
+                    </div>
+                </div>
+            </div>
             <template id="post">
                 <!-- Estructura general de un post en la pagina -->
                 <div class="encabezado">

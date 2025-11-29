@@ -114,3 +114,142 @@ body {
         }
     }
 }
+
+#centro > nav {
+    border-bottom: solid 2px var(--bordes);
+    width: 100%;
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li {
+            width: 50%;
+            height: 50px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.2s;
+            span {
+                text-align: center;
+            }
+
+            #ParaTi::after {
+                content: "";
+                display: block;
+                width: 80px;
+                height: 4px;
+                transform: translateY(15px);
+                border-radius: 25px;
+                background: var(--azulPrimario);
+            }
+        }
+        li:hover {
+            cursor: pointer;
+            background: var(--bordes);
+            transition: background-color 0.2s;
+        }
+    }
+}
+
+#postear {
+    border-bottom: solid 2px var(--bordes);
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    div > img {
+        /* Foto de Perfil */
+        width: 60px;
+    }
+    #postFormulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        input {
+            /* Que esta pasando */
+            width: 98%;
+            height: 20px;
+            font-size: 1.5rem;
+            padding: 8px 0px 15px 0px;
+            border: none;
+            outline: none;
+        }
+        #privacidad {
+            color: var(--azulPrimario);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        #privacidad::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            background-color: currentColor;
+            mask: url(./../img/planeta.svg) no-repeat center/contain;
+            mask-size: contain;
+        }
+        /* Botones de post */
+        #botones {
+            display: flex;
+            justify-content: space-between;
+            div {
+                display: flex;
+                gap: 5px;
+                a {
+                    width: 25px;
+                    height: 25px;
+                    background-size: 90%;
+                }
+                #imagen {
+                    background-color: var(--azulPrimario);
+                    mask: url(./../img/imagen.svg) no-repeat center/contain;
+                    mask-size: contain;
+                }
+                #gifs {
+                    background-color: var(--azulPrimario);
+                    mask: url(./../img/gifs.svg) no-repeat center/contain;
+                    mask-size: contain;
+                }
+                #grok {
+                    background-color: var(--azulPrimario);
+                    mask: url(./../img/grok.svg) no-repeat center/contain;
+                    mask-size: contain;
+                }
+                #opciones {
+                    background-color: var(--azulPrimario);
+                    mask: url(./../img/encuestas.svg) no-repeat center/contain;
+                    mask-size: contain;
+                }
+                #emoji {
+                    background-color: var(--azulPrimario);
+                    mask: url(./../img/emoji.svg) no-repeat center/contain;
+                    mask-size: contain;
+                }
+                #fecha {
+                    background-color: var(--azulPrimario);
+                    mask: url(./../img/fecha.svg) no-repeat center/contain;
+                    mask-size: contain;
+                }
+                #ubicacion {
+                    background-color: var(--azulPrimario);
+                    mask: url(./../img/ubicacion.svg) no-repeat center/contain;
+                    mask-size: contain;
+                }
+            }
+            #botonpostear {
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                border-radius: 35px;
+                width: 90px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
