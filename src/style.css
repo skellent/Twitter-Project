@@ -115,6 +115,73 @@ body {
     }
 }
 
+#izquierda {
+    padding-top: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    #icono {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        mask: url(./../img/logo.svg) no-repeat center/contain;
+        mask-size: contain;
+    }
+    /* Cinta de Opciones */
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 35px 0px 0px 35px;
+            transition: background-color 0.2s;
+            span {
+                font-size: 1.4rem;
+            }
+            span::before {
+                content: "";
+                display: inline-block;
+                width: 60px;
+                height: 40px;
+                vertical-align: middle;
+                background-color: black;
+
+                mask-size: contain;
+            }
+            #home::before {
+                mask: url(./../img/others/home.svg) no-repeat center/contain;
+            }
+            #lupa::before {
+                mask: url(./../img/others/lupa.svg) no-repeat center/contain;
+            }
+            #notificaciones::before {
+                mask: url(./../img/others/campana.svg) no-repeat center/contain;
+            }
+            #mensajes::before {
+                mask: url(./../img/others/mensajes.svg) no-repeat center/contain;
+            }
+            #grokIzquierda::before {
+                mask: url(./../img/grok.svg) no-repeat center/contain;
+            }
+            #perfil::before {
+                mask: url(./../img/others/usuario.svg) no-repeat center/contain;
+            }
+            #opciones::before {
+                mask: url(./../img/others/opciones.svg) no-repeat center/contain;
+            }
+        }
+        li:hover {
+            background-color: var(--bordes);
+            transition: background-color 0.2s;
+        }
+    }
+}
+
 #centro > nav {
     border-bottom: solid 2px var(--bordes);
     width: 100%;
