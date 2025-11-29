@@ -6,10 +6,11 @@
         <title>X (Twitter Project)</title>
         <!-- Vinculaciones -->
         <link rel="stylesheet" href="src/style.css" />
+        <link rel="icon" href="img/icono.ico" />
         <script src="src/script.js" defer></script>
     </head>
     <body>
-        <nav>
+        <nav id="izquierda">
             <!-- Side Bar o menu izquierdo -->
             <a href="#" id="icono">
                 <!-- Icono de Twitter -->
@@ -42,7 +43,7 @@
                 </a>
             </a>
         </nav>
-        <main>
+        <main id="centro">
             <!-- Contenido Principal (post) -->
             <nav>
                 <ul>
@@ -65,7 +66,7 @@
                 </div>
             </template>
         </main>
-        <aside class="flex">
+        <aside id="derecha" class="flex">
             <!-- Que esta pasando y Suscripcion -->
             <form id="busqueda">
                 <input type="text" placeholder="Buscar" />
@@ -76,6 +77,7 @@
                     Suscribete para desbloquear nuevas funciones y, si eres
                     elegible, recibir un pago de cuotas de ingresos.
                 </p>
+                <a href="#">Suscribirse</a>
             </div>
             <nav id="tendencia" class="tarjeta">
                 <h2>Qué está pasando</h2>
